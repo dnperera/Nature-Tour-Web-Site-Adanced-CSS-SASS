@@ -1,7 +1,6 @@
 .row {
 	max-width: $grid-width; //1140pix
-	background-color: #fcf300;
-	marign: 0 auto;
+	margin: 0 auto;
 
 	&:first-child {
 		margin-top: $gutter-vertical;
@@ -15,7 +14,6 @@
 
 	//define attribute class name strarts with 'col-'
 	[class^='col-'] {
-		background-color: #ff002a;
 		float: left;
 		&:not(:last-child) {
 			// everything except last child column
