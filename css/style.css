@@ -28,6 +28,50 @@
     opacity: 1;
     transform: translate(0); } }
 
+/*Reset CSS*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 5rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 4rem;
+    letter-spacing: 3.5rem;
+    /*to work the animation*/
+    animation: mvoeInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    /*	animation-delay: 3s;
+	*/ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: mvoeInRight 2s ease-out; }
+
 .btn:Link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -90,45 +134,3 @@
     left: 50%;
     transform: translate(-40%, -50%);
     text-align: center; }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 5rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 4rem;
-    letter-spacing: 3.5rem;
-    /*to work the animation*/
-    animation: mvoeInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    /*	animation-delay: 3s;
-	*/ }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: mvoeInRight 2s ease-out; }
-
-/*Reset CSS*/
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  font-family: "Lato",sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem;
-  box-sizing: border-box; }
