@@ -13,4 +13,16 @@
 		),
 		url(../img/nat-4.jpg);
 	background-size: cover;
+	transform: skewY(-7deg);
+	margin-top: -10rem;
+	//select direct child / children only
+	& > * {
+		transform: skewY(7deg); // shew feature boxes oposite direction
+	}
+}
+
+.section-tours {
+	background-color: $color-grey-light-1;
+	padding: 20rem 0 50rem 0;
+	margin-top: -10rem;
 }
