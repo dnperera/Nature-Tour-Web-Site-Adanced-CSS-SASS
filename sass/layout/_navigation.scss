@@ -15,6 +15,16 @@
 		cursor: pointer;
 		box-shadow: 0 2rem 3rem rgba($color-black, 0.2);
 		text-align: center;
+
+		@include respond(tab-port) {
+			top: 3rem;
+			right: 3rem;
+		}
+
+		// @include respond(phone) {
+		// 	top: 1rem;
+		// 	right: 13rem;
+		// }
 	}
 
 	&__background {
@@ -28,6 +38,15 @@
 		z-index: 1000;
 		transition: transform 0.8s cubic-bezier(0.7, 0.13, 0.29, 0.95);
 		//transform: scale(80);
+		@include respond(tab-port) {
+			top: 3.5rem;
+			right: 3.5rem;
+		}
+
+		// @include respond(phonr) {
+		// 	top: 1.5rem;
+		// 	right: 13.5rem;
+		// }
 	}
 
 	&__nav {
